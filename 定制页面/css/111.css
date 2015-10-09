@@ -1,0 +1,228 @@
+html {
+    overflow-y: scroll;
+    border:0;
+}
+body {
+    margin:0;
+    background: #c5c5c5  center top;
+    color: #fff;
+}
+
+
+/*调节导航条背景*/
+#header-bar {
+    position: relative;
+
+
+    padding: 13px;
+    background: #272727;
+
+
+    transition: all 0.4s;
+}
+
+/*调整class的样式           没用
+body header .row {
+    position: relative;
+    height: 500px;
+    margin-bottom: 0;
+}*/
+
+
+/*调整整体字体*/
+body {
+    font: 14px/1.5 Georgia Serief;
+}
+
+/*调整列表格式，取消项目符号*/
+body ul, body ol {
+    padding: 0;
+    list-style: none;
+
+}
+/*让列表居右、向左浮动显示*/
+body header .row #gnb {
+    margin-right: 10px;
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+body header .row #gnb ul {
+    margin: 0;
+}
+body header .row #gnb ul li {
+    float: left;
+    margin-left: 30px;
+}
+/*修改列表字体，取消下划线*/
+body header .row #gnb ul li:last-child {
+    margin-right: 0;
+}
+body header .row #gnb ul li a {
+    font: 16px Georgia;
+    color: #fff;
+    text-decoration: none;
+
+
+    transition: all 0.3s ease-in-out;
+}
+
+body header .row #brand {
+    font: 16px Georgia;
+    color: #fff;
+    text-decoration: none;
+
+
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/*style//////////////////////////*/
+
+
+/* /////////////////////////////////////////
+	=#page-wrap
+///////////////////////////////////////// */
+#page-wrap {
+    width: 740px;
+    margin: 100px auto;
+
+}
+h1 {
+    margin-bottom: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 2px #111;
+}
+h1 span {
+    display: block;
+    margin-top: 6px;
+    letter-spacing: 7px;
+    font: 14px Verdana;
+}
+
+/* /////////////////////////////////////////
+	=.no-js
+///////////////////////////////////////// */
+.no-js #tab_design {
+    overflow: hidden;
+    padding: 2em;
+    background: #fff;
+    color: #333;
+}
+.no-js #tab_design li {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.no-js #tab_design a {
+    color: #333;
+}
+.no-js #tab_design img {
+    vertical-align: bottom;
+}
+
+/* /////////////////////////////////////////
+	=.Global Classes
+///////////////////////////////////////// */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.ie6 .clearfix {
+    height: 1px;
+}
+.ie7 .clearfix {
+    min-height: 1px;
+}
+.blind {
+    visibility: hidden;
+    position: absolute;
+    top: -10000px;
+    height: 1px;
+    width: 1px;
+}
+
+
+
+/*tab*/
+
+.tab_menu li {
+    position: relative;
+    float: left;
+    margin-right: 2px;
+}
+.tab_menu li {
+    display: inline;
+}
+.tab_menu li a {
+    display: block;
+    padding: 0.5em 1.5em;
+    background: #e5e9ea;
+    color: #607291;
+    font-size: 16px;
+
+    transition: all 0.2s;
+}
+.tab_menu li:hover a, .tab_menu li a:focus,.tab_menu li.active a {
+    padding-left: 2.2em;
+    padding-right: 0.8em;
+    background: #f9f9f9;
+
+    box-shadow: 1px -1px 2px #5c5c5c;
+}
+.tab_menu li img {
+    opacity: 0;
+    position: absolute;
+    top: 7px;
+    left: 16px;
+
+    transition: all 0.2s;
+}
+.tab_menu li:hover img,.tab_menu li.active img {
+    opacity: 1;
+    left: 6px;
+}
+
+/* /////////////////////////////////////////
+	=.tab_contents
+///////////////////////////////////////// */
+.tab_contents {
+    position: relative;
+    min-height: 144px;
+    padding: 2em;
+    color: #607291;
+    background: #f9f9f9;
+    -webkit-box-shadow: 2px 2px 2px #5c5c5c;
+    -moz-box-shadow: 2px 2px 2px #5c5c5c;
+    box-shadow: 2px 2px 2px #5c5c5c;
+}
+.tab_contents {
+    height: 144px;
+}
+.tab_contents li {
+    min-height: 144px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    background: #f9f9f9;
+}
+.tab_contents li {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    width: 95%;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+.tab_contents li.active {
+    z-index: 10;
+}
+.tab_contents img {
+    float: left;
+    margin-right: 10px;
+}
+
+

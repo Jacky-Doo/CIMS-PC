@@ -1,0 +1,17 @@
+.text-orange{
+    color: #fa5400;
+}
+.text-white{
+    color: #ccc;
+}
+
+.font{
+    font-weight: 400;
+    font-family: "Microsoft YaHei",sans-serif;
+    font-style: normal;
+
+}
+.size{
+    font-size: 13px;
+    line-height: 1.5em;
+}
